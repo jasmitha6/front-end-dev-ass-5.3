@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+	 <meta charset="utf-8">
+	 <title>object.literals</title>
+	</head>
+    <body>
+     <p>STUDENT DETAILS:</p>
+		              
+    <script type="text/javascript">                                         /*Create an object*/
+      var student = {
+         firstName : "John",
+         lastName  : "Doe",
+         DOB       : "20-07-1990",
+         skills    : "c,c++",
+         adress:{                                                           /*Nesting an object*/
+             city  :"hyd",
+            state  :"telangana",
+            country: "india",
+            pincode: "500045",
+		 }
+   };
+
+    document.write("student name- " + student.firstName + "<br>" +"<br>");
+	document.write("student dob- " +  student.DOB + "<br>" +"<br>");
+	document.write("student skills- " +student.skills + "<br>" +"<br>");
+	document.write("student city- " + student.adress.city + "<br>" +"<br>");
+	document.write("student state-" + student.adress.state + "<br>" +"<br>");
+	document.write("student country-" + student.adress.country + "<br>" +"<br>");
+	document.write("student pincode-" + student.adress.pincode + "<br>" +"<br>"); 
+	     /*deletion of an object*/
+	
+	delete student.lastName;
+	document.write("student.lastname-" + student.lastName + "<br>" +"<br>");
+	       /*updation of  object*/
+		
+	student.eyecolor="black";
+	document.write( "student eyecolor-" + student.eyecolor + "<br>" +"<br>");
+	student.mothername="wiley";
+	document.write( "student mothername-" + student.mothername + "<br>" +"<br>");
+
+     </script>
+    </body>
+</html>
